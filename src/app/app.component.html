@@ -1,0 +1,13 @@
+<div>
+  <label for="username">Username: </label>
+  <input type="text" id="username" (change)="storeData()" [(ngModel)]="loginService.user.username">
+</div>
+<div>
+  <label for="password">Password: </label>
+  <input type="text" id="password" type="password" (change)="storeData()" [(ngModel)]="loginService.user.password">
+</div>
+<div>
+  <button (click)="updateStateFilingStatus()">Update State Filing Status</button>
+</div>
+
+<pre>{{ consoleService.value}}</pre>
